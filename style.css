@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; }
+body { display: grid; place-items: center; background: #003b25; overflow: hidden; }
+.cover { position: relative; width: min(100vw, 150vh); aspect-ratio: 3 / 2; overflow: hidden; background: #003b25; }
+.stage { position: absolute; width: 1500px; height: 1000px; transform-origin: top left; overflow: hidden; }
+.stage img { position: absolute; display: block; user-select: none; opacity: 0; }
+.background { inset: 0; width: 1500px; height: 1000px; }
+.logo1 { left: 1138px; top: 96px; width: 112px; height: 137px; }
+.logo2 { left: 1281px; top: 97px; width: 151px; height: 116px; }
+.headline { left: 64px; top: 80px; width: 786px; height: 103px; }
+.title1 { left: 38px; top: 162px; width: 851px; height: 170px; }
+.title2 { left: 259px; top: 256px; width: 426px; height: 185px; }
+.credits { left: 91px; top: 645px; width: 390px; height: 286px; }
+.replay { position: fixed; right: 16px; bottom: 16px; width: 40px; height: 40px; border: 1px solid #ffffff80; border-radius: 50%; background: #003b25bb; color: white; font: 27px/1 system-ui; cursor: pointer; opacity: 0; transition: opacity .2s; }
+body:hover .replay, .replay:focus-visible, .replay.ready { opacity: .85; }
+.replay:hover { opacity: 1; }
+.replay:focus-visible { outline: 2px solid white; outline-offset: 4px; }
